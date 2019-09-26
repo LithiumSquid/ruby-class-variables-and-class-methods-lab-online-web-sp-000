@@ -28,6 +28,11 @@ attr_accessor :name, :artist, :genre
   end
   
   def genre_count
-    
-    
+    da_hash = {}
+    da_hash[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+
+  def artist_count
+    artist_hash = {}
+
 end
+
