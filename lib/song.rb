@@ -15,7 +15,7 @@ attr_accessor :name, :artist, :genre
   end
   
   def count
-    return @@count
+    @@count
   end
   
   def self.genres
@@ -27,7 +27,7 @@ attr_accessor :name, :artist, :genre
   end
   
   def genre_count
-    genres[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    
   end
   def artist_count
     artist_hash = {}
