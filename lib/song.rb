@@ -42,7 +42,13 @@ attr_accessor :name, :artist, :genre
     artist_hash = {}
     @@artists.each do |artist|
       if artist_hash[artist]
-        genre_hash[artist]
+        artist_hash[artist] += 1
+      else
+        artist_hash[artist] = 1
+      end
+    end
+    artist_count
+  end
 end
 end
 
