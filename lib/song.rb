@@ -18,6 +18,5 @@ attr_accessor :name, :artist, :genre
   end
   
   def genres(genre)
-    @@genres.uniq
-  
+    @@genres.uniq!
 end
