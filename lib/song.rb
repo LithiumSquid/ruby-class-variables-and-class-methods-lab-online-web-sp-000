@@ -35,7 +35,7 @@ attr_accessor :name, :artist, :genre
         genre_hash[genre] = 1
       end
     end
-    genre_count
+    genre_hash
   end
   
   def artist_count
@@ -47,7 +47,7 @@ attr_accessor :name, :artist, :genre
         artist_hash[artist] = 1
       end
     end
-    artist_count
+    artist_hash
   end
 
 end
